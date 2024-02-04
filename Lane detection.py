@@ -12,7 +12,7 @@ def draw_lines(img, lines, color=(0, 255, 0), thickness=2):
         for x1, y1, x2, y2 in line:
             cv2.line(img, (x1, y1), (x2, y2), color, thickness)
 
-cap = cv2.VideoCapture("C:\\Users\\krish\\Desktop\\Lane Detection files\\Sample.mp4")  # 0 for webcam, or replace with video file path
+cap = cv2.VideoCapture("\\File path goes here")  # 0 for webcam, or replace with video file path
 
 while cap.isOpened():
     ret, frame = cap.read()
